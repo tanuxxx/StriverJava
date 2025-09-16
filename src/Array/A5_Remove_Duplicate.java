@@ -24,7 +24,7 @@ public class A5_Remove_Duplicate {
 
             }
             System.out.print(set+" ");
-            System.out.println("\n");
+            System.out.println("\t");
 
 
 
