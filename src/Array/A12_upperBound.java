@@ -34,10 +34,7 @@ public class A12_upperBound {
 
         int result = upperBound(arr,x);
 
-        if(result==n){
-            System.out.println(n);
-        }else{
-            System.out.println(result);
-        }
+        System.out.println(result);
+        
     }
 }

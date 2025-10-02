@@ -2,18 +2,18 @@ package Array;
 
 import java.util.Scanner;
 
-public class A11_Lower_Bound {
+public class A13_searchInsertPosition {
+    //it is similar to the lowerbound
     public static int lowerBound(int[] arr, int x) {
-        int low=0,high= arr.length-1;
+        int low = 0, high = arr.length - 1;
         int ans = arr.length;
-        while(low<=high){
-            int mid = (low+high)/2;
-            if(arr[mid]>=x){
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (arr[mid] >= x) {
                 ans = mid;   //may be an ans
-                high = mid-1;
-            }
-            else{
-                low = mid+1;
+                high = mid - 1;
+            } else {
+                low = mid + 1;
             }
         }
         return ans;
@@ -36,7 +36,5 @@ public class A11_Lower_Bound {
         int result = lowerBound(arr,x);
 
         System.out.println(result);
-
-
     }
 }
